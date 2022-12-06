@@ -30,6 +30,11 @@ app.use(cors());
 app.use(express.json());
 
 // routes
+
+app.get('/', (req, res) => {
+    res.send('jobs-api');
+});
+
 app.use('/api/v1', api);
 
 
